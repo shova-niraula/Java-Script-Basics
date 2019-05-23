@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head><title> Using various ways of printing in javascript</title>
+</head>
+<body>
+<h1>1.First method is printing from script</h1>
+<p>For printing from javascript to html, we need to create an id in the html document and access the script code</p>
+<p id="print1"></p>
+<h1> 2.Second method is using document.write</h1>
+<script>
+    //First method
+    document.getElementById('print1').innerHTML='Hi I am writing through script tag and not from html paragraph. ' +
+        'For this I used id and innerHTML and getElementById function of javascript'
+    //Second method
+    document.write('I am writing from within document.write function');
+    //Third method
+    window.alert('trying to use window alert');
+    //Fourth Method
+    console.log( "I am trying set 4 use of console log");
+</script>
+<h1>3.Using window.alert</h1>
+<h1>4. use of console log</h1>
+</body>
+</html>
